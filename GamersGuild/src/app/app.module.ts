@@ -9,7 +9,10 @@ import { HomeComponent } from './components/home/home.component';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
 
 const appRoutes: Routes = [
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  {path: '',
+  redirectTo: '/home/',
+  pathMatch: 'full'}
 ]
 
 @NgModule({
