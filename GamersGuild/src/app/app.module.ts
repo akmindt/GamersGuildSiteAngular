@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeCompnent}
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
