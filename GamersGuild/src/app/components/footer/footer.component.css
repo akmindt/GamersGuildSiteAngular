@@ -1,13 +1,12 @@
-footer{
-    background-color: white;
-}
-
 .content{
-    padding: 5px;
-    background-color: white;
     text-align: center;
 }
 
-.footer_spacer{
-    flex: 1 1 auto;
+#copy-text{
+    display: inline-block;
+}
+
+mat-icon{
+    display: inline;
+    float: right;
 }

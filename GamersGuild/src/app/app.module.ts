@@ -11,6 +11,11 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
 import { FooterComponent } from './components/footer/footer.component';
+import { MatIconModule } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -37,8 +42,14 @@ const appRoutes: Routes = [
     MatCardModule,
     MatExpansionModule,
     BrowserAnimationsModule,
+    MatIconModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+      iconRegistry.addSvgIconSet(sanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg'));
+  }
+}
