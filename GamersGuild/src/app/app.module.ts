@@ -11,16 +11,13 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
 import { FooterComponent } from './components/footer/footer.component';
-<<<<<<< HEAD
 import { MatIconModule } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
-=======
 import { EventCalendarComponent } from './components/event-calendar/event-calendar.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
->>>>>>> 955729001731f5da4d9f44b8a28b6e83402451e1
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},

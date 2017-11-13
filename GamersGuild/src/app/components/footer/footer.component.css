@@ -9,4 +9,12 @@
 mat-icon{
     display: inline;
     float: right;
+    background: cornflowerblue;
+    color: white;
+}
+
+mat-card{
+    background: firebrick;
+    color: white;
+
 }

@@ -1,4 +1,8 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 body{
     background: lightgrey;
+    margin: auto;
+}
+a[_ngcontent-c1]{
+    color: inherit;
 }
