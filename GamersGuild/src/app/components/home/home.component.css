@@ -3,6 +3,7 @@ mat-card {
 }
 
 .logo-image {
+    margin-top: 64px;
     text-align: center;
 }
 
@@ -10,3 +11,6 @@ mat-card {
     width:650px;
 }
 
+.content{
+    margin-top: 64px !important;
+}
