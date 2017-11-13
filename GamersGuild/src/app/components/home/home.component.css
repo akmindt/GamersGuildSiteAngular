@@ -1,5 +1,5 @@
-mat-card {
-    height: 100%;
+.website-content{
+    background: sandybrown;
 }
 
 .mySlides{
@@ -10,10 +10,30 @@ mat-card {
     text-align: center;
 }
 
+#store-hours{
+    text-align: center;
+}
+
 .content{
     margin-top: 64px !important;
     min-height: 840px;
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+}
+.header{
+    text-align: center;
+    font-size: 3em;
+    background: darkorchid;
+    color: white;
+}
+
+.event-image{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-size: 2em; 
+    text-align: center;
 }

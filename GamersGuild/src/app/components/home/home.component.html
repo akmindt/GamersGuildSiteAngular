@@ -1,31 +1,46 @@
 <mat-card class="website-content">
   <mat-card-content class="content">
-  <div id="photo-carousel" class="w3-content w3-display-container">
+    <mat-card>
+      <div id="photo-carousel" class="w3-content w3-display-container">
 
-      <img class="mySlides" mat-card-image src="../../assets/GamersGuild.png" alt="Gamer's Guild Logo">
-      <img class="mySlides" mat-card-image src="../../assets/test1.jpg" alt="Gamer's Guild Logo">
-      <img class="mySlides" mat-card-image src="../../assets/test2.jpg" alt="Gamer's Guild Logo">
+        <img class="mySlides" mat-card-image src="../../assets/GamersGuild.png" alt="Gamer's Guild Logo">
+        <img class="mySlides" mat-card-image src="../../assets/test1.jpg" alt="Gamer's Guild Logo">
+        <img class="mySlides" mat-card-image src="../../assets/test2.jpg" alt="Gamer's Guild Logo">
 
-      <button class="w3-button w3-black w3-display-left" (click)="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" (click)="plusDivs(1)">&#10095;</button>
-  </div>
-  <mat-card-content class="home-text">
-    <h3>Welcome</h3>
-    <p>Welcome to Boulder's premier gaming store. We specialize in Magic the Gathering (singles & ancient packs), Dungeons and
-      Dragons (books & supplies), Warhammer 40k (Models 20% off) and tabletop gaming in a friendly, relaxed environment suitable
-      for players of all ages. We will give 10% off games we do not have in stock. We are family~owned and operated. We know
-      our games and play what we sell!</p>
-    <h3>Regular Store Hours</h3>
-    <p>
-      Monday, Tuesday, Thursday, 12 Noon - 6 pm Wednesday, Friday, 12 Noon - 8pm Saturday, 11 am - 7 pm Sunday, 12 noon - 5 pm
-      (extended hours during special events/tournaments)
-      <br>$25 FLAT Entry Fee
-      <br>Rivals of IXALAN PreReLease weekend!
-      <br>January 13-14 (Check event details)
-      <br>Yelp to earn 10% off board games and books
-      <br>(excluding already discounted items)
-      <br>Find out what's happening at the Guild by following us on Facebook and win stuff: @GamersGuild
-      <br>or use the links below to share our site.</p>
+       <!-- <button class="w3-button w3-black w3-display-left" (click)="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" (click)="plusDivs(1)">&#10095;</button>
+       -->
+      </div>
+    </mat-card>
+    <mat-card>
+      <mat-card-content class="home-text">
+        <mat-card-title class = "header">Welcome</mat-card-title>
+        <p>Welcome to Boulder's premier gaming store. We specialize in Magic the Gathering (singles & ancient packs), Dungeons
+          and Dragons (books & supplies), Warhammer 40k (Models 20% off) and tabletop gaming in a friendly, relaxed environment
+          suitable for players of all ages. We will give 10% off games we do not have in stock. We are family~owned and operated.
+          We know our games and play what we sell!</p>
+          <mat-card-title class = "header">Regular Store Hours</mat-card-title>
+        <p id="store-hours">
+          Monday, Tuesday, Thursday, 12 Noon - 6 pm
+          <br>Wednesday, Friday, 12 Noon - 8pm
+          <br> Saturday, 11 am - 7 pm
+          <br>Sunday, 12 noon - 5 pm (extended hours during special events/tournaments)
+        </p>
+        <mat-card-title class = "header">Special Events</mat-card-title>
+
+        <img class="event-image" mat-card-image src="../../assets/rix-header.jpg" alt="Gamer's Guild Logo">
+        <p>
+          <br>$25 FLAT Entry Fee
+          <br>Rivals of IXALAN PreReLease weekend!
+          <br>January 13-14 (Check event details)
+        </p>
+        <p>
+          <br>Yelp to earn 10% off board games and books
+          <br>(excluding already discounted items)
+          <br>Find out what's happening at the Guild by following us on Facebook and win stuff: @GamersGuild
+          <br>or use the links below to share our site.
+        </p>
+      </mat-card-content>
+    </mat-card>
   </mat-card-content>
-</mat-card-content>
 </mat-card>
