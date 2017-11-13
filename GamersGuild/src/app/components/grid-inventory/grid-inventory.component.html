@@ -1,0 +1,16 @@
+<mat-grid-list cols="4" rowHeight="450px">
+  <mat-grid-tile *ngFor="let card of cards">
+    <mat-card>
+      <img src={{card.imgUrl}} >
+      <div class="dick">
+        {{card.name}}
+        <br>
+        {{card.set}}
+        <br>
+        {{card.formats}}
+        <br>
+        ${{card.price}}
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
