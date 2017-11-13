@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Search</h2>
+  <form>
+    <mat-form-field class="form-group">
+      <input matInput placeholder="Card Name">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="form-group">
+        <mat-select placeholder="Set">
+          <mat-option *ngFor="let set of sets" [value]="set.value">
+            {{ set.viewValue }}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="form-group">
+        <mat-select placeholder="Format">
+          <mat-option *ngFor="let format of formats" [value]="format.value">
+            {{ format.viewValue }}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="form-group">
+        <mat-select placeholder="Price Range">
+          <mat-option *ngFor="let range of priceRanges" [value]="range.value">
+            {{ range.viewValue }}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button>Search</button>
+  </form>
+</div>
