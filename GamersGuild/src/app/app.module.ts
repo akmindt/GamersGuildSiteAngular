@@ -11,6 +11,11 @@ import { MatCardModule, MatButtonModule, MatToolbarModule, MatExpansionModule, M
          MatOptionModule } from '@angular/material';
 
 import { FooterComponent } from './components/footer/footer.component';
+import { MatIconModule } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { EventCalendarComponent } from './components/event-calendar/event-calendar.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
@@ -54,8 +59,14 @@ const appRoutes: Routes = [
     MatSelectModule,
     MatExpansionModule,
     BrowserAnimationsModule,
+    MatIconModule,
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+      iconRegistry.addSvgIconSet(sanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg'));
+  }
+}
