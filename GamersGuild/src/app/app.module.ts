@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 
+import { MatCardModule } from '@angular/material';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatToolbarModule } from '@angular/material';
 import { FooterComponent } from './components/footer/footer.component';
 import { EventCalendarComponent } from './components/event-calendar/event-calendar.component';
@@ -18,7 +21,7 @@ const appRoutes: Routes = [
   {path: '',
   redirectTo: '/home/',
   pathMatch: 'full'}
-]
+];
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ const appRoutes: Routes = [
     ),
     MatButtonModule,
     MatToolbarModule,
+    MatCardModule,
+    MatExpansionModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
