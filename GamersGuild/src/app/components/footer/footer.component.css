@@ -1,4 +1,4 @@
-.content{
+.footer-content{
     text-align: center;
 }
 
@@ -16,5 +16,4 @@ mat-icon{
 mat-card{
     background: firebrick;
     color: white;
-
 }
