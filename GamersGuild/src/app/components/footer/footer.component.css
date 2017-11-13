@@ -1,0 +1,13 @@
+footer{
+    background-color: white;
+}
+
+.content{
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer_spacer{
+    flex: 1 1 auto;
+}
